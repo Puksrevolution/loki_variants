@@ -1,0 +1,86 @@
+@import url('https://fonts.googleapis.com/css2?&family=Nunito:wght@200;300;400;600;700;900&family=Mirza:wght@700');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-image: url('/media/history/Thor_Ragnarok_Textless_Character_Posters_03.jpg');
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    background-attachment: fixed;
+	color: #FFD221;
+	font-family: 'Nunito', sans-serif;
+}
+
+.navbar-brand {
+	filter: drop-shadow(0 0 0.1rem black) drop-shadow(0 0 0.1rem black) drop-shadow(0 0 0.1rem black);
+}
+
+.navbar-nav .nav-item a {
+	color: #FFD221;    
+	text-shadow: 0 0 0.1rem black,
+                 0 0 0.1rem black,
+                 0 0 0.1rem black,
+                 0 0 0.2rem black,
+                 0 0 0.2rem black,
+                 0 0 0.2rem black;
+}
+
+.navbar-nav .nav-item a:hover {
+	color: hsl(108, 86%, 40%);    
+}
+
+.nav-link {
+	font-size: xx-large;
+    letter-spacing: -0.1rem;
+}
+
+.main {
+	margin: 2rem 3rem 3rem;
+}
+
+.main__header {
+    padding-bottom: 2rem;
+	color: #FFD221;
+	font-family: 'Mirza', cursive;
+	font-size: 5rem;
+	text-transform: uppercase;
+    line-height: 0.7;
+    text-shadow: 0 0 0.1rem black,
+                 0 0 0.1rem black,
+                 0 0 0.1rem black,
+                 0 0 0.2rem black,
+                 0 0 0.2rem black,
+                 0 0 0.2rem black,
+                 0 0 0.2rem black,
+                 0 0 0.3rem black,
+                 0 0 0.3rem black,
+                 0 0 0.3rem black,
+                 0 0 0.3rem black,
+                 0 0 0.4rem black,
+                 0 0 0.4rem black,
+                 0 0 0.4rem black;
+}
+
+/*
+.loki {
+    margin-top: 2rem;
+    padding: 3rem 0 4rem 0;
+    background-image: url('/media/history/loki-tom-hiddleston.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.tva {
+    padding: 3rem 0 4rem 0;
+    background-image: url('/media/history/Loki-2.jpg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+*/

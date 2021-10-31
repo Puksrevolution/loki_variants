@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?&family=Nunito:wght@200;300;400;600;700;900&family=Mirza:wght@700');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	background-color: black;	
+	font-family: 'Nunito', sans-serif;
+}
+
+.navbar-nav .nav-item a {
+	color: #FFD221;	
+}
+
+.navbar-nav .nav-item a:hover {
+	color: hsl(108, 86%, 40%);    
+}
+
+.nav-link {
+	font-size: xx-large;
+    letter-spacing: -0.1rem;
+}
+
+.main {
+	margin: 3rem 0.5rem;
+}
+
+.main__header {
+	color: #FFD221;
+	font-family: 'Mirza', cursive;
+	font-size: 5rem;
+	text-transform: uppercase;
+}
+
+:root {
+	--curve: 40;
+}
+
+.card {
+	position: relative;
+	display: block;
+	height: 100%;
+	width: 100%;
+	border-radius: calc(var(--curve) * 1px);
+	overflow: hidden;	
+}
+
+.card_image {	
+    width: 100%;    
+}
+
+.card_overlay {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	z-index: 1;
+	border-radius: calc(var(--curve) * 1px);
+	background-color: var(--surface-color);
+	transform: translateY(100%);
+	transition: 0.2s ease-in-out;
+}
+
+.card:hover .card_overlay {
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+	-moz-transform: translateY(0);
+	-ms-transform: translateY(0);
+	-o-transform: translateY(0);
+}
+
+.card-header {
+	position: relative;
+	display: flex;
+	align-items: center;
+	gap: 2rem;
+	border-radius: calc(var(--curve) * 1px) 0 0 0;
+	background-color: #cfc6c7;
+	padding: 2em;
+	transform: translateY(-100%);
+	transition: 0.2s ease-in-out;
+
+}
+
+.card-arc {
+	width: 5em;
+	height: 5em;
+	position: absolute;
+	bottom: 100%;
+	right: 0;
+	z-index: 1;
+}
+
+.card-arc path {
+	fill: var(--surface-color);
+	d: path("M 40 80 c 22 0 40 -22 40 -40 v 40 Z");
+}
+
+.card:hover .card-header {
+	transform: translateY(0);
+}
+
+.card-thumb {
+	flex-shrink: 0;
+	width: 3.125em;
+	height: 3.125em;
+	border-radius: 50%;
+}
+
+.card-title {
+	margin: 0 0 0.3em;
+	color: #FFD221;
+	font-size: 1.3rem;
+	text-align: center;
+	text-shadow: 0 0 0.1rem black,
+				 0 0 0.1rem black,
+				 0 0 0.1rem black,
+				 0 0 0.1rem black,
+				 0 0 0.1rem black;
+}
+
+.card-description {
+	margin: 0;
+	padding: 1rem 0.5rem;
+	background-color: #cfc6c7;
+	color: hsl(108, 86%, 20%);
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+	display: -webkit-box;
+	-webkit-box-orient: vertical;
+	-webkit-line-clamp: 3;
+	overflow: hidden;
+}
