@@ -24,6 +24,10 @@ body {
 		0 0 0.1rem black;
 }
 
+.navbar-nav .nav-item a:hover {
+	color: hsl(108, 86%, 40%);    
+}
+
 .nav-link {
 	font-family: 'Nunito', sans-serif;
 	font-size: xx-large;

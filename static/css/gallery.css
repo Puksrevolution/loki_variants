@@ -7,21 +7,21 @@
 }
 
 body {
-	background-color: black;	
+	background-color: black;
 	font-family: 'Nunito', sans-serif;
 }
 
 .navbar-nav .nav-item a {
-	color: #FFD221;	
+	color: #FFD221;
 }
 
 .navbar-nav .nav-item a:hover {
-	color: hsl(108, 86%, 40%);    
+	color: hsl(108, 86%, 40%);
 }
 
 .nav-link {
 	font-size: xx-large;
-    letter-spacing: -0.1rem;
+	letter-spacing: -0.1rem;
 }
 
 .main {
@@ -33,6 +33,7 @@ body {
 	font-family: 'Mirza', cursive;
 	font-size: 5rem;
 	text-transform: uppercase;
+	line-height: 0.7;
 }
 
 :root {
@@ -45,11 +46,11 @@ body {
 	height: 100%;
 	width: 100%;
 	border-radius: calc(var(--curve) * 1px);
-	overflow: hidden;	
+	overflow: hidden;
 }
 
-.card_image {	
-    width: 100%;    
+.card_image {
+	width: 100%;
 }
 
 .card_overlay {
@@ -78,8 +79,7 @@ body {
 	align-items: center;
 	gap: 2rem;
 	border-radius: calc(var(--curve) * 1px) 0 0 0;
-	background-color: #cfc6c7;
-	padding: 2em;
+	background-color: #cfc6c700;
 	transform: translateY(-100%);
 	transition: 0.2s ease-in-out;
 
@@ -116,10 +116,19 @@ body {
 	font-size: 1.3rem;
 	text-align: center;
 	text-shadow: 0 0 0.1rem black,
-				 0 0 0.1rem black,
-				 0 0 0.1rem black,
-				 0 0 0.1rem black,
-				 0 0 0.1rem black;
+                 0 0 0.1rem black,
+                 0 0 0.1rem black,
+                 0 0 0.2rem black,
+                 0 0 0.2rem black,
+                 0 0 0.2rem black,
+                 0 0 0.2rem black,
+                 0 0 0.3rem black,
+                 0 0 0.3rem black,
+                 0 0 0.3rem black,
+                 0 0 0.3rem black,
+                 0 0 0.4rem black,
+                 0 0 0.4rem black,
+                 0 0 0.4rem black;
 }
 
 .card-description {
