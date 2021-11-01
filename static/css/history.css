@@ -7,12 +7,12 @@
 }
 
 body {
-    background-image: url('https://marvelcinematicuniverse.fandom.com/wiki/Loki?file=Thor_Ragnarok_Textless_Character_Posters_03.jpg');
+    background-image: url('../images/history/Thor_Ragnarok_Textless_Character_Posters_03.jpg');
     background-repeat: no-repeat;
     background-position: top center;
     background-size: cover;
     background-attachment: fixed;
-    background-color: black;
+    /*background-color: black;*/
 	color: #FFD221;
 	font-family: 'Nunito', sans-serif;
 }
