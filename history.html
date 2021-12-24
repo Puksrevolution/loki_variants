@@ -11,213 +11,167 @@
     <meta name="keywords" content="">
     <meta name="author" content="Puks's WebDesing">
 
-    <title>Loki Variants</title>
-
     <!-- Social Media -->
     <meta property="og:title" content="">
     <meta property="og:description" content=".">
     <meta property="og:image" content="">
     <meta property="og:url" content="">
 
+    <title>Loki Variants | Lokis History</title>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="media/icons/favicon.png" />
 
+    <!----------------------------------------------- CORE CSS ----------------------------------------------->
     <!-- Font Awesome -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-        integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-        crossorigin="anonymous" />
-    <!-- Bootstrap Icons -->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" type="text/css"
-        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-        integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
-        crossorigin="anonymous" />
-    <!-- Static Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <!-- History CSS -->
     <link rel="stylesheet" href="static/css/history.css">
+
+    <!----------------------------------------------- EXTRA CSS ---------------------------------------------->
+    <!-- Navbar -->
+    <link rel="stylesheet" href="static/css/navbar.css">
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-sm">
-        <!-- Logo -->
-        <a class="navbar-brand" href="index.html">
-            <img src="media/icons/helmet.png" width="60" alt="">
-        </a>
-
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="history.html">History</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
+    <!-- Navbar -->
+    <div class="nav-wrapper">
+        <nav class="navbar">
+            <a href="index.html">
+                <img class="logo" src="media/logo/loki-logo.png" alt="Loki">
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <img class="helmet" src="media/icons/helmet.png" width="60" alt="Loki Helmet">
+            </div>
+            <ul class="nav no-search">
+                <li class="nav-item"><a href="history.html">History</a></li>
+                <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a href="#">Contact Us</a></li>
+                <i class="fas fa-search" id="search-icon"></i>
+                <input class="search-input" type="text" placeholder="Search..">
             </ul>
+        </nav>
+    </div>
+
+    <!-- Gallery -->
+
+
+    <!-- Tom Hiddleston’s History -->
+    <section class="loki my-3">
+        <div class="main__header">
+            <h2>
+                Tom Hiddleston's<br>
+                History of Loki
+            </h2>
         </div>
-    </nav>
-
-    <main class="main">
-
-        <!-- Tom Hiddleston’s History -->
-        <section class="loki">
-            <div class="row g-0">
-                <div class="col-12">
-                    <h2 class="text-center main__header mb-5">
-                        Tom Hiddleston’s<br>
-                        History of Loki
-                    </h2>
-                </div>
-            </div>
-            <div class="row row justify-content-evenly mx-3 g-0">
-                <div class="col-12 col-lg-6">
-                    <iframe class="align-self-center" width="420" height="315"
-                        src="https://www.youtube.com/watch?v=WIsiLZBIEQI">
-                    </iframe>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <iframe class="align-self-center" width="420" height="315"
-                        src="https://www.youtube.com/watch?v=7LydHN2_eE4">
-                    </iframe>
-                </div>
-            </div>
-        </section>
-
-        <!-- TVA -->
-        <section class="tva">
-            <div class="row g-0">
-                <div class="col-12">
-                    <h2 class="text-center main__header my-5">
-                        The TVA & The<br>
-                        Loki Variants
-                    </h2>
-                </div>
-            </div>
-            <div class="row justify-content-center mx-3 g-0">
-                <div class="col-12 col-lg-6">
-                    <iframe class="align-self-center" width="420" height="315"
-                        src="https://www.youtube.com/watch?v=KoDUowfDN9w">
-                    </iframe>
-                </div>
-                <div class="col-12 col-lg-6">
-                    <iframe class="align-self-center" width="420" height="315"
-                        src="https://www.youtube.com/watch?v=VSjTP4WzjNM">
-                    </iframe>
-                </div>
-            </div>
-        </section>
-
-        <!-- Comic History -->
-        <div class="row g-0">
-            <div class="col-12">
-                <h2 class="text-center main__header mt-5">
-                    Lokis Comic History
-                </h2>
-            </div>
+        <div class="flex-container">
+            <iframe class="flex-items mb-2 m-xs-2" width="420" height="315"
+                src="https://www.youtube.com/watch?v=WIsiLZBIEQI">
+            </iframe>
+            <iframe class="flex-items mb-2 m-xs-2" width="420" height="315"
+                src="https://www.youtube.com/watch?v=7LydHN2_eE4">
+            </iframe>
         </div>
-        <div class="row g-0">
-            <div class="col-12 mx-4">
-                <div class="container container__history">
-                    <h3 class="text__history">Fictional character biography</h3>
-                    <p class="text__history">
-                        Many years ago, when Bor, ruler of Asgard, was battling frost giants,
-                        he followed a wounded giant to a powerful sorcerer that was waiting for him.
-                        The sorcerer caught him unaware, turning Bor into snow. Bor's son, Odin,
-                        found his father as he was blowing away; Bor begged Odin to find a sorcerer to free him,
-                        but Odin made no attempt to save his father. Bor cursed Odin saying that he would take in
-                        the son of a fallen king and raise it as his own. Not a week later, Odin himself led the
-                        Asgardians
-                        into battle against the Frost Giants and killed Laufey, who was the King, in personal combat.
-                        After slaying Laufey, Odin found a small Asgardian-sized child hidden within the primary
-                        stronghold
-                        of the Frost Giants. The child was Loki; Laufey having kept him hidden from the Frost Giant
-                        people
-                        due to his shame over his son's small size. Odin took the child, out of a combination of pity,
-                        to appease the memory of his father, and because he was the child of a worthy adversary slain
-                        in honorable combat, and raised as his own alongside his biological son Thor.
-                        Throughout his childhood and into adolescence, Loki was resentful of the differences between how
-                        Thor
-                        and himself were treated by the citizens of Asgard. The Asgardians valued great strength,
-                        tenacity,
-                        and bravery in battle above all things, and Loki was clearly inferior to his brother Thor in
-                        those areas.
-                        What he lacked in size and strength, however, he made up for in power and skill, particularly as
-                        a sorcerer.
-                        As Loki grew to adulthood, his natural talent for causing mischief would make itself manifest
-                        and earned
-                        him a nickname as the "God of Mischief"; his mischievousness eventually became malice as his
-                        hunger for
-                        power and revenge grew stronger. Several times he tried to use tricks to get rid of Thor, such
-                        as telling
-                        him to guard a hole in the wall that he himself had made. In time, his reputation grew from
-                        being a
-                        playful and mischievous trickster to the "God of Evil". Over the centuries, Loki attempted on
-                        many
-                        occasions to seize the rulership of Asgard and to destroy Thor, even helping the Storm Giant
-                        Ghan to
-                        escape Thor planning to get a debt from him later, and aided other enemies of Asgard, planning
-                        to take over.
-                        Odin, who had grown weary of Loki's mischief, magically imprisoned him within a tree until
-                        someone would shed
-                        a tear for his plight. Loki eventually freed himself by causing a leaf to strike Heimdall, the
-                        guardian of
-                        Bifrost, in the eye, which made him shed a tear. Loki compiled an extensive criminal record in
-                        Asgard, and
-                        was frequently exiled. He later met the Sorcerer Eldred, who taught him black magic, repaying
-                        Eldred
-                        by later giving him to the Fire demon Surtur.
-                    </p>
-                </div>
+    </section>
+
+    <!-- TVA -->
+    <section class="tva mb-3">
+        <div class="main__header">
+            <h2>
+                The TVA & The<br>
+                Loki Variants
+            </h2>
+        </div>
+        <div class="flex-container">
+            <iframe class="flex-items mb-2 m-xs-2" width="420" height="315"
+                src="https://www.youtube.com/watch?v=KoDUowfDN9w">
+            </iframe>
+            <iframe class="flex-items mb-2 m-xs-2" width="420" height="315"
+                src="https://www.youtube.com/watch?v=VSjTP4WzjNM">
+            </iframe>
+        </div>
+    </section>
+
+    <!-- Comic History -->
+    <section class="bgo">
+        <div class="main__header">
+            <h2>
+                Lokis Comic History
+            </h2>
+        </div>
+        <div class="px-4 px-xs-1">
+            <h3 class="text__history">Fictional character biography</h3>
+            <p class="text__history">
+                Many years ago, when Bor, ruler of Asgard, was battling frost giants,
+                he followed a wounded giant to a powerful sorcerer that was waiting for him.
+                The sorcerer caught him unaware, turning Bor into snow. Bor's son, Odin,
+                found his father as he was blowing away; Bor begged Odin to find a sorcerer to free him,
+                but Odin made no attempt to save his father. Bor cursed Odin saying that he would take in
+                the son of a fallen king and raise it as his own. Not a week later, Odin himself led the
+                Asgardians into battle against the Frost Giants and killed Laufey, who was the King, in
+                personal combat. After slaying Laufey, Odin found a small Asgardian-sized child hidden
+                within the primary stronghold of the Frost Giants. The child was Loki; Laufey having kept
+                him hidden from the Frost Giant people due to his shame over his son's small size.
+                Odin took the child, out of a combination of pity, to appease the memory of his father,
+                and because he was the child of a worthy adversary slain in honorable combat, and raised as
+                his own alongside his biological son Thor. Throughout his childhood and into adolescence,
+                Loki was resentful of the differences between how Thor and himself were treated by the
+                citizens of Asgard. The Asgardians valued great strength, tenacity, and bravery in battle
+                above all things, and Loki was clearly inferior to his brother Thor in those areas.
+                What he lacked in size and strength, however, he made up for in power and skill, particularly as
+                a sorcerer. As Loki grew to adulthood, his natural talent for causing mischief would make
+                itself manifest and earned him a nickname as the "God of Mischief"; his mischievousness
+                eventually became malice as his hunger for power and revenge grew stronger. Several times
+                he tried to use tricks to get rid of Thor, such as telling him to guard a hole in the wall
+                that he himself had made. In time, his reputation grew from being a playful and mischievous
+                trickster to the "God of Evil". Over the centuries, Loki attempted on many occasions to
+                seize the rulership of Asgard and to destroy Thor, even helping the Storm Giant Ghan to
+                escape Thor planning to get a debt from him later, and aided other enemies of Asgard, planning
+                to take over. Odin, who had grown weary of Loki's mischief, magically imprisoned him within
+                a tree until someone would shed a tear for his plight. Loki eventually freed himself by
+                causing a leaf to strike Heimdall, the guardian of Bifrost, in the eye, which made him shed
+                a tear. Loki compiled an extensive criminal record in Asgard, and was frequently exiled.
+                He later met the Sorcerer Eldred, who taught him black magic, repaying Eldred by later giving
+                him to the Fire demon Surtur.
+            </p>
+        </div>
+    </section>
+
+    <!-- Nordic History -->
+    <section class="bgo">
+        <div class="main__header">
+            <h2>
+                Lokis Norse Mythology
+            </h2>
+        </div>
+        <div class="flex-container">
+            <div class="flex-image">
+                <img class="card-img" alt="" src="media/history/Loki.jpg">
+            </div>
+            <div class="flex-text container__history px-xs-1 pt-xs-1">
+                <h3 class="text__history">Loki, God of Mischief</h3>
+                <p class="text__history">
+                    Loki, in Norse mythology, a cunning trickster who had the ability to change his shape
+                    and sex. Although his father was the giant Fárbauti, he was included among the Aesir
+                    (a tribe of gods).
+                    Loki was represented as the companion of the great gods Odin and Thor, helping them with
+                    his clever plans but sometimes causing embarrassment and difficulty for them and himself. He
+                    also appeared as the enemy of the gods, entering their banquet uninvited and demanding their
+                    drink. He was the principal cause of the death of the god Balder. Loki was bound to a rock (by
+                    the entrails of one or more of his sons, according to some sources) as punishment, thus in
+                    many ways resembling the Greek figures Prometheus and Tantalus. Also like Prometheus, Loki is
+                    considered a god of fire.
+                </p>
             </div>
         </div>
+    </section>
 
-        <!-- Nordic History -->
-        <div class="row g-0">
-            <div class="col-12 mt-5">
-                <h2 class="text-center main__header">
-                    Lokis Norse Mythology
-                </h2>
-            </div>
-        </div>
-        <div class="row justify-content-center mt-5">
-            <div class="col-12">
-                <div class="row justify-content-center">
-                    <div class="col-12 col-md-4 col-lg-3">
-                        <img class="card-img" alt=""
-                            src="media/history/5ad4f91888897d2edaa8d02fa9b7c7040f8a235cv2_00.jpg">
-                    </div>
-                    <div class="col-12 col-md-6 col-lg-6 mb-4  align-self-center">
-                        <div class="container container__history">
-                            <h3 class="text__history">Loki, God of Mischief</h3>
-                            <p class="text__history">
-                                Loki, in Norse mythology, a cunning trickster who had the ability to change his shape
-                                and sex. Although his father was the giant Fárbauti, he was included among the Aesir
-                                (a tribe of gods).
-                                Loki was represented as the companion of the great gods Odin and Thor, helping them with
-                                his
-                                clever plans but sometimes causing embarrassment and difficulty for them and himself. He
-                                also
-                                appeared as the enemy of the gods, entering their banquet uninvited and demanding their
-                                drink.
-                                He was the principal cause of the death of the god Balder. Loki was bound to a rock (by
-                                the
-                                entrails of one or more of his sons, according to some sources) as punishment, thus in
-                                many ways
-                                resembling the Greek figures Prometheus and Tantalus. Also like Prometheus, Loki is
-                                considered a
-                                god of fire.
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/js/navbar.js"></script>
 </body>
 
 </html>

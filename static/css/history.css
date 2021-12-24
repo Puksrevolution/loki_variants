@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?&family=Nunito:wght@200;300;400;600;700;900&family=Mirza:wght@700');
 
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 body {
     background-image: url('../images/history/Thor_Ragnarok_Textless_Character_Posters_03.jpg');
     background-repeat: no-repeat;
@@ -17,27 +11,8 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
-.navbar-brand {
-    filter: drop-shadow(0 0 0.1rem black) drop-shadow(0 0 0.1rem black) drop-shadow(0 0 0.1rem black);
-}
-
-.navbar-nav .nav-item a {
-    color: #FFD221;
-    text-shadow: 0 0 0.1rem black,
-                 0 0 0.1rem black,
-                 0 0 0.1rem black,
-                 0 0 0.2rem black,
-                 0 0 0.2rem black,
-                 0 0 0.2rem black;
-}
-
-.navbar-nav .nav-item a:hover {
-    color: hsl(108, 86%, 40%);
-}
-
-.nav-link {
-    font-size: xx-large;
-    letter-spacing: -0.1rem;
+.nav-wrapper {	
+    background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.9) 100%);
 }
 
 .main {
@@ -45,11 +20,12 @@ body {
 }
 
 .main__header {
-    padding-bottom: 2rem;
+    margin-bottom: 3rem;
     color: #FFD221;
     font-family: 'Mirza', cursive;
-    font-size: 5rem;
+    font-size: 3rem;
     text-transform: uppercase;
+    text-align: center;
     line-height: 0.7;
     text-shadow: 0 0 0.1rem black,
                  0 0 0.1rem black,
@@ -67,10 +43,58 @@ body {
                  0 0 0.4rem black;
 }
 
-.container__history {
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-image {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-text {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: auto;
+    align-self: auto;
+    order: 0;
+}
+
+.bgo {
     background-color: rgba(0, 0, 0, 0.7);
-    padding: 1rem 1rem 0.5rem 1rem;
-    border-radius: 1rem;
+    padding: 2rem 0;
+}
+
+.container__history {
+    max-width: 600px;
 }
 
 .text__history {
@@ -83,24 +107,57 @@ body {
 }
 
 .card-img {
-    width: auto;
+    max-width: 250px;
 }
 
-/*
-.loki {
-    margin-top: 2rem;
-    padding: 3rem 0 4rem 0;
-    background-image: url('/media/history/loki-tom-hiddleston.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.mb-2 {
+    margin-bottom: 2rem;
 }
 
-.tva {
-    padding: 3rem 0 4rem 0;
-    background-image: url('/media/history/Loki-2.jpg');
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: cover;
+.my-3 {
+    margin: 3rem 0;
 }
-*/
+
+.mb-3 {
+    margin-bottom: 3rem;
+}
+
+.px-4 {
+    padding: 0 4rem;
+}
+
+@media only screen and (max-width: 720px) { 
+	
+    .nav-wrapper {	
+        background-color: black;
+	}
+	.navbar ul {
+		background-color: black;
+	}
+}
+
+
+@media only screen and (max-width: 720px) {
+    .main__header {
+        font-size: 2rem;        
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .m-xs-2 {
+        margin: 2rem;
+    }
+
+    .px-xs-1 {
+        padding: 0 1rem;
+    }
+
+    .pt-xs-1 {
+        padding-top: 1.5rem;
+    }
+
+    iframe {
+        width: 300px;
+        height: 315px;
+    }
+}
