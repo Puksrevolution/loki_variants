@@ -2,185 +2,229 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-  <!-- SEO -->
-  <meta name="description" content="">
-  <meta name="keywords" content="">
-  <meta name="author" content="Puks's WebDesing">
+    <!-- SEO -->
+    <meta name="description" content="">
+    <meta name="keywords" content="">
+    <meta name="author" content="Puks's WebDesing">
 
-  <title>Loki Variants</title>
+    <!-- Social Media -->
+    <meta property="og:title" content="">
+    <meta property="og:description" content=".">
+    <meta property="og:image" content="">
+    <meta property="og:url" content="">
 
-  <!-- Social Media -->
-  <meta property="og:title" content="">
-  <meta property="og:description" content=".">
-  <meta property="og:image" content="">
-  <meta property="og:url" content="">
+    <title>Loki Variants | Artwork Gallery</title>
 
-  <!-- Favicon -->
-  <link rel="icon" type="image/png" href="media/icons/favicon.png" />
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="media/icons/favicon.png" />
 
-  <!-- Font Awesome -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-    integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
-    crossorigin="anonymous" />
-  <!-- Bootstrap Icons -->
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css">
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.6.0/css/bootstrap.min.css"
-    integrity="sha512-P5MgMn1jBN01asBgU0z60Qk4QxiXo86+wlFahKrsQf37c9cro517WzVSPPV1tDKzhku2iJ2FVgL67wG03SGnNA=="
-    crossorigin="anonymous" />
-  <!-- Static Custom CSS -->
-  <link rel="stylesheet" href="static/css/gallery.css">
+    <!----------------------------------------------- CORE CSS ----------------------------------------------->
+    <!-- Font Awesome -->
+    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+
+    <!-- Gallery CSS -->
+    <link rel="stylesheet" href="static/css/gallery.css">
+
+    <!----------------------------------------------- EXTRA CSS ---------------------------------------------->
+    <!-- Navbar -->
+    <link rel="stylesheet" href="static/css/navbar.css">
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm">
-    <!-- Logo -->
-    <a class="navbar-brand" href="index.html">
-      <img src="media/icons/helmet.png" width="60" alt="">
-    </a>
+    <!-- Navbar -->
+    <div class="nav-wrapper">
+        <nav class="navbar">
+            <a href="index.html">
+                <img class="logo" src="media/logo/loki-logo.png" alt="Loki">
+            </a>
+            <div class="menu-toggle" id="mobile-menu">
+                <img class="helmet" src="media/icons/helmet.png" width="60" alt="Loki Helmet">
+            </div>
+            <ul class="nav no-search">
+                <li class="nav-item"><a href="history.html">History</a></li>
+                <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+                <li class="nav-item"><a href="#">Contact Us</a></li>
+                <i class="fas fa-search" id="search-icon"></i>
+                <input class="search-input" type="text" placeholder="Search..">
+            </ul>
+        </nav>
+    </div>
 
-    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
-      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
+    <!-- Gallery -->
+    <main class="main">
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav ml-auto">
-        <li class="nav-item">
-          <a class="nav-link" href="history.html">History</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link" href="gallery.html">Gallery</a>
-        </li>
-      </ul>
-    </div>
-  </nav>
-  <main class="main">
-    <div class="row">
-      <div class="col-12">
-        <h2 class="text-center main__header">
-          Artists & Fan<br>
-          Art Gallery
-        </h2>
-      </div>
-    </div>
-    <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 mt-5 mx-3">
-      <div class="col mb-4">
-        <a class="card"
-          href="https://images.unsplash.com/photo-1509557965875-b88c97052f0e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFsbG93ZWVufGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
-          <img src="media/gallery/jc0khbl1axc71.jpg" class="card_image"
-            alt="Classic Loki, Kid Loki, and Alligator Loki" />
-          <div class="card_overlay">
-            <div class="card-header">
-              <div class="card-header-text">
-                <h3 class="card-title"> Classic Loki, Kid Loki, and Alligator Loki </h3>
-              </div>
+        <!-- Artwork -->
+        <section class="gallery">
+            <!-- Heading -->
+            <div class="main__header">
+                <h2>
+                    Artwork
+                </h2>
             </div>
-            <p class="card-description">
-              Artist Wesley Burt<br>
-              Shared by Marvel Studios
-            </p>
-          </div>
-        </a>
-      </div>
-      <div class="col mb-4">
-        <a class="card"
-          href="https://images.unsplash.com/photo-1509557965875-b88c97052f0e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFsbG93ZWVufGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
-          <img src="media/gallery/jc0khbl1axc71.jpg" class="card_image"
-            alt="Classic Loki, Kid Loki, and Alligator Loki" />
-          <div class="card_overlay">
-            <div class="card-header">
-              <div class="card-header-text">
-                <h3 class="card-title"> Classic Loki, Kid Loki, and Alligator Loki </h3>
-              </div>
+            <!-- Artwork Cards -->
+            <div class="flex-container">
+                <a class="card flex-items"
+                    href="https://www.reddit.com/r/marvelstudios/comments/opy24e/loki_concept_art_featuring_classic_loki_kid_loki/"
+                    target="_blank" rel="noopener">
+                    <img src="media/gallery/jc0khbl1axc71.jpg" class="card_image"
+                        alt="Classic Loki, Kid Loki, and Alligator Loki" />
+                    <div class="card_overlay">
+                        <div class="card-header">
+                            <div class="card-header-text">
+                                <h3 class="card-title"> Classic Loki, Kid Loki, and Alligator Loki </h3>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Artist Wesley Burt<br>
+                            Shared by Marvel Studios
+                        </p>
+                    </div>
+                </a>
+                <a class="card flex-items"
+                    href="https://www.reddit.com/r/marvelstudios/comments/opy24e/loki_concept_art_featuring_classic_loki_kid_loki/"
+                    target="_blank" rel="noopener">
+                    <img src="media/gallery/jc0khbl1axc71.jpg" class="card_image"
+                        alt="Classic Loki, Kid Loki, and Alligator Loki" />
+                    <div class="card_overlay">
+                        <div class="card-header">
+                            <div class="card-header-text">
+                                <h3 class="card-title"> Classic Loki, Kid Loki, and Alligator Loki </h3>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Artist Wesley Burt<br>
+                            Shared by Marvel Studios
+                        </p>
+                    </div>
+                </a>
+                <a class="card flex-items"
+                    href="https://www.reddit.com/r/marvelstudios/comments/opy24e/loki_concept_art_featuring_classic_loki_kid_loki/"
+                    target="_blank" rel="noopener">
+                    <img src="media/gallery/jc0khbl1axc71.jpg" class="card_image"
+                        alt="Classic Loki, Kid Loki, and Alligator Loki" />
+                    <div class="card_overlay">
+                        <div class="card-header">
+                            <div class="card-header-text">
+                                <h3 class="card-title"> Classic Loki, Kid Loki, and Alligator Loki </h3>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Artist Wesley Burt<br>
+                            Shared by Marvel Studios
+                        </p>
+                    </div>
+                </a>
+                <a class="card flex-items"
+                    href="https://www.reddit.com/r/marvelstudios/comments/opy24e/loki_concept_art_featuring_classic_loki_kid_loki/"
+                    target="_blank" rel="noopener">
+                    <img src="media/gallery/jc0khbl1axc71.jpg" class="card_image"
+                        alt="Classic Loki, Kid Loki, and Alligator Loki" />
+                    <div class="card_overlay">
+                        <div class="card-header">
+                            <div class="card-header-text">
+                                <h3 class="card-title"> Classic Loki, Kid Loki, and Alligator Loki </h3>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Artist Wesley Burt<br>
+                            Shared by Marvel Studios
+                        </p>
+                    </div>
+                </a>
             </div>
-            <p class="card-description">
-              Artist Wesley Burt<br>
-              Shared by Marvel Studios
-            </p>
-          </div>
-        </a>
-      </div>
-      <div class="col mb-4">
-        <a class="card"
-          href="https://images.unsplash.com/photo-1509557965875-b88c97052f0e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFsbG93ZWVufGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
-          <img src="media/gallery/jc0khbl1axc71.jpg" class="card_image"
-            alt="Classic Loki, Kid Loki, and Alligator Loki" />
-          <div class="card_overlay">
-            <div class="card-header">
-              <div class="card-header-text">
-                <h3 class="card-title"> Classic Loki, Kid Loki, and Alligator Loki </h3>
-              </div>
+        </section>
+
+        <!-- Fan Art -->
+        <section class="gallery">
+            <!-- Heading -->
+            <div class="main__header">
+                <h2>
+                    Fan Art
+                </h2>
             </div>
-            <p class="card-description">
-              Artist Wesley Burt<br>
-              Shared by Marvel Studios
-            </p>
-          </div>
-        </a>
-      </div>
-      <div class="col mb-4">
-        <a class="card"
-          href="https://images.unsplash.com/photo-1509557965875-b88c97052f0e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFsbG93ZWVufGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
-          <img src="media/gallery/jc0khbl1axc71.jpg" class="card_image"
-            alt="Classic Loki, Kid Loki, and Alligator Loki" />
-          <div class="card_overlay">
-            <div class="card-header">
-              <div class="card-header-text">
-                <h3 class="card-title"> Classic Loki, Kid Loki, and Alligator Loki </h3>
-              </div>
+            <!-- Fan Art Cards -->
+            <div class="flex-container">
+                <a class="card flex-items"
+                    href="https://www.pinterest.com/pin/838654761830266501/"
+                    target="_blank" rel="noopener">
+                    <img src="media/gallery/6cbbf93886970eead63f04594d56ec2b--loki-fan-art-chris-pine.jpg" class="card_image"
+                        alt="Loki Fan Art" />
+                    <div class="card_overlay">
+                        <div class="card-header">
+                            <div class="card-header-text">
+                                <h3 class="card-title">Loki & the Water Spirit</h3>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Artmetica<br>
+                            Shared by Pinterest
+                        </p>
+                    </div>
+                </a>
+                <a class="card flex-items"
+                    href="https://www.pinterest.com/pin/838654761830266501/"
+                    target="_blank" rel="noopener">
+                    <img src="media/gallery/6cbbf93886970eead63f04594d56ec2b--loki-fan-art-chris-pine.jpg" class="card_image"
+                        alt="Loki Fan Art" />
+                    <div class="card_overlay">
+                        <div class="card-header">
+                            <div class="card-header-text">
+                                <h3 class="card-title">Loki & the Water Spirit</h3>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Artmetica<br>
+                            Shared by Pinterest
+                        </p>
+                    </div>
+                </a>
+                <a class="card flex-items"
+                    href="https://www.pinterest.com/pin/838654761830266501/"
+                    target="_blank" rel="noopener">
+                    <img src="media/gallery/6cbbf93886970eead63f04594d56ec2b--loki-fan-art-chris-pine.jpg" class="card_image"
+                        alt="Loki Fan Art" />
+                    <div class="card_overlay">
+                        <div class="card-header">
+                            <div class="card-header-text">
+                                <h3 class="card-title">Loki & the Water Spirit</h3>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Artmetica<br>
+                            Shared by Pinterest
+                        </p>
+                    </div>
+                </a>
+                <a class="card flex-items"
+                    href="https://www.pinterest.com/pin/838654761830266501/"
+                    target="_blank" rel="noopener">
+                    <img src="media/gallery/6cbbf93886970eead63f04594d56ec2b--loki-fan-art-chris-pine.jpg" class="card_image"
+                        alt="Loki Fan Art" />
+                    <div class="card_overlay">
+                        <div class="card-header">
+                            <div class="card-header-text">
+                                <h3 class="card-title">Loki & the Water Spirit</h3>
+                            </div>
+                        </div>
+                        <p class="card-description">
+                            Artmetica<br>
+                            Shared by Pinterest
+                        </p>
+                    </div>
+                </a>
             </div>
-            <p class="card-description">
-              Artist Wesley Burt<br>
-              Shared by Marvel Studios
-            </p>
-          </div>
-        </a>
-      </div>
-      <div class="col mb-4">
-        <a class="card"
-          href="https://images.unsplash.com/photo-1509557965875-b88c97052f0e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFsbG93ZWVufGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
-          <img src="media/gallery/jc0khbl1axc71.jpg" class="card_image"
-            alt="Classic Loki, Kid Loki, and Alligator Loki" />
-          <div class="card_overlay">
-            <div class="card-header">
-              <div class="card-header-text">
-                <h3 class="card-title"> Classic Loki, Kid Loki, and Alligator Loki </h3>
-              </div>
-            </div>
-            <p class="card-description">
-              Artist Wesley Burt<br>
-              Shared by Marvel Studios
-            </p>
-          </div>
-        </a>
-      </div>
-      <div class="col mb-4">
-        <a class="card"
-          href="https://images.unsplash.com/photo-1509557965875-b88c97052f0e?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aGFsbG93ZWVufGVufDB8MHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60">
-          <img src="media/gallery/jc0khbl1axc71.jpg" class="card_image"
-            alt="Classic Loki, Kid Loki, and Alligator Loki" />
-          <div class="card_overlay">
-            <div class="card-header">
-              <div class="card-header-text">
-                <h3 class="card-title"> Classic Loki, Kid Loki, and Alligator Loki </h3>
-              </div>
-            </div>
-            <p class="card-description">
-              Artist Wesley Burt<br>
-              Shared by Marvel Studios
-            </p>
-          </div>
-        </a>
-      </div>
-    </div>
-  </main>
+        </section>
+    </main>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="static/js/navbar.js"></script>
+
 </body>
 
 </html>

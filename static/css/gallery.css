@@ -1,43 +1,79 @@
 @import url('https://fonts.googleapis.com/css2?&family=Nunito:wght@200;300;400;600;700;900&family=Mirza:wght@700');
 
-* {
-	margin: 0;
-	padding: 0;
-	box-sizing: border-box;
-}
-
 body {
 	background-color: black;
 	font-family: 'Nunito', sans-serif;
 }
 
-.navbar-nav .nav-item a {
-	color: #FFD221;
+.nav-wrapper {	
+    background-color: black;
 }
 
-.navbar-nav .nav-item a:hover {
-	color: hsl(108, 86%, 40%);
-}
-
-.nav-link {
-	font-size: xx-large;
-	letter-spacing: -0.1rem;
+.gallery {
+    margin-bottom: 2rem;
 }
 
 .main {
-	margin: 3rem 0.5rem;
+	margin: 3rem 0;
 }
 
 .main__header {
+    margin-bottom: 3rem;
 	color: #FFD221;
 	font-family: 'Mirza', cursive;
-	font-size: 5rem;
+	font-size: 3rem;
 	text-transform: uppercase;
+    text-align: center;
 	line-height: 0.7;
 }
 
+.flex-container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+    align-content: center;
+}
+
+.flex-items:nth-child(1) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(2) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(3) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    align-self: auto;
+    order: 0;
+}
+
+.flex-items:nth-child(4) {
+    display: block;
+    flex-grow: 0;
+    flex-shrink: 1;
+    flex-basis: 300px;
+    align-self: auto;
+    order: 0;
+}
+
 :root {
-	--curve: 40;
+	--curve: 20;
 }
 
 .card {
@@ -45,7 +81,9 @@ body {
 	display: block;
 	height: 100%;
 	width: 100%;
-	border-radius: calc(var(--curve) * 1px);
+    margin-bottom: 2rem;	
+    border-top-left-radius: calc(var(--curve) * 1px);
+    border-top-right-radius: calc(var(--curve) * 1px);
 	overflow: hidden;
 }
 
@@ -111,7 +149,7 @@ body {
 }
 
 .card-title {
-	margin: 0 0 0.3em;
+	margin: 0 0 0.3em 1em;
 	color: #FFD221;
 	font-size: 1.3rem;
 	text-align: center;
@@ -143,4 +181,11 @@ body {
 	-webkit-box-orient: vertical;
 	-webkit-line-clamp: 3;
 	overflow: hidden;
+}
+
+@media only screen and (max-width: 720px) { 
+		
+	.navbar ul {
+		background-color: black;
+	}
 }
