@@ -1,38 +1,16 @@
-@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900&family=Nunito:wght@200;300;400;600;700;900&family=Mirza:wght@700');
-
-* {
-	margin: 0;
-    padding: 0;
-	box-sizing: border-box;
-}
+@import url('https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700;900');
 
 body {
-	background: hsl(108, 86%, 20%);
+	background: #0D4102;	
 	overflow: hidden;
-	margin: 0;
-	font-family: 'Cinzel Decorative', cursive;
 }
 
-.navbar-brand {
-	filter: drop-shadow(0 0 0.1rem black) drop-shadow(0 0 0.1rem black);
-}
-
-.navbar-nav .nav-item a {
-	color: #FFD221;    
-	text-shadow: 0 0 0.1rem black,
-		0 0 0.1rem black,
-		0 0 0.1rem black;
-}
-
-.navbar-nav .nav-item a:hover {
-	color: hsl(108, 86%, 40%);    
-}
-
-.nav-link {
-	font-family: 'Nunito', sans-serif;
-	font-size: xx-large;
-    letter-spacing: -0.1rem;
-}
+/*
+	Code source:
+	Marvel Logo animation | pure CSS
+	jessica duarte
+	https://codepen.io/jessynd/pen/aObLYJ
+*/
 
 .bg {
 	position: absolute;
@@ -139,27 +117,29 @@ body {
 	}
 }
 
-.logo {
+.intro {
 	position: absolute;
 	top: 50%;
 	left: 50%;
+	padding: 0.2em;
+	font-family: 'Cinzel Decorative', cursive;
+	font-size: 9em;
+    text-align: center;
+	line-height: 1;
 	transform-style: preserve-3d;
 	transform: translate(-50%, -50%);
-	font-size: 9em;	
-	animation: hide 8s linear forwards;
-	padding: 0.2em;
-	line-height: 1;	
+	animation: hide 8s linear forwards;	
 }
 
-#retrigger--1:checked~.pane .logo {
+#retrigger--1:checked~.pane .intro {
 	animation-name: hide--1;
 }
 
-#retrigger--2:checked~.pane .logo {
+#retrigger--2:checked~.pane .intro {
 	animation-name: hide--2;
 }
 
-.logo:nth-child(1) {
+.intro:nth-child(1) {
 	animation: change 8s steps(30) forwards;
 	background: url('../images/intro/lokis.jpg');
 	background-size: 2000px auto;
@@ -168,87 +148,87 @@ body {
 	color: transparent;
 }
 
-#retrigger--1:checked~.pane .logo:nth-child(1) {
+#retrigger--1:checked~.pane .intro:nth-child(1) {
 	animation-name: change--1;
 }
 
-#retrigger--2:checked~.pane .logo:nth-child(1) {
+#retrigger--2:checked~.pane .intro:nth-child(1) {
 	animation-name: change--2;
 }
 
-.logo:nth-child(2) {
+.intro:nth-child(2) {
 	transform: translate3d(-50%, -50%, -2px);
 }
 
-.logo:nth-child(3) {
+.intro:nth-child(3) {
 	transform: translate3d(-50%, -50%, -3px);
 }
 
-.logo:nth-child(4) {
+.intro:nth-child(4) {
 	transform: translate3d(-50%, -50%, -4px);
 }
 
-.logo:nth-child(5) {
+.intro:nth-child(5) {
 	transform: translate3d(-50%, -50%, -5px);
 }
 
-.logo:nth-child(6) {
+.intro:nth-child(6) {
 	transform: translate3d(-50%, -50%, -6px);
 }
 
-.logo:nth-child(7) {
+.intro:nth-child(7) {
 	transform: translate3d(-50%, -50%, -7px);
 }
 
-.logo:nth-child(8) {
+.intro:nth-child(8) {
 	transform: translate3d(-50%, -50%, -8px);
 }
 
-.logo:nth-child(9) {
+.intro:nth-child(9) {
 	transform: translate3d(-50%, -50%, -9px);
 }
 
-.logo:nth-child(10) {
+.intro:nth-child(10) {
 	transform: translate3d(-50%, -50%, -10px);
 }
 
-.logo:nth-child(11) {
+.intro:nth-child(11) {
 	transform: translate3d(-50%, -50%, -11px);
 }
 
-.logo:nth-child(12) {
+.intro:nth-child(12) {
 	transform: translate3d(-50%, -50%, -12px);
 }
 
-.logo:nth-child(13) {
+.intro:nth-child(13) {
 	transform: translate3d(-50%, -50%, -13px);
 }
 
-.logo:nth-child(14) {
+.intro:nth-child(14) {
 	transform: translate3d(-50%, -50%, -14px);
 }
 
-.logo:nth-child(15) {
+.intro:nth-child(15) {
 	transform: translate3d(-50%, -50%, -15px);
 }
 
-.logo:nth-child(16) {
+.intro:nth-child(16) {
 	transform: translate3d(-50%, -50%, -16px);
 }
 
-.logo:nth-child(17) {
+.intro:nth-child(17) {
 	transform: translate3d(-50%, -50%, -17px);
 }
 
-.logo:nth-child(18) {
+.intro:nth-child(18) {
 	transform: translate3d(-50%, -50%, -18px);
 }
 
-.logo:nth-child(19) {
+.intro:nth-child(19) {
 	transform: translate3d(-50%, -50%, -19px);
 }
 
-.logo:nth-child(20) {
+.intro:nth-child(20) {
 	transform: translate3d(-50%, -50%, -20px);
 }
 
@@ -395,4 +375,30 @@ body {
 
 #retrigger--1:checked~.buttons .button--2 {
 	display: block;
+}
+
+
+/* Media Queries */
+/* Mobile Devices - Phones/Tablets */
+@media only screen and (max-width: 770px) { 
+	.intro {
+		font-size: 8em;
+	}
+}
+
+@media only screen and (max-width: 720px) { 
+
+	.navbar ul {
+		background-color: #0D4102;		
+	}
+
+	.intro {
+		font-size: 6em;
+	}
+}
+
+@media only screen and (max-width: 540px) { 
+	.intro {
+		font-size: 3.9em;
+	}
 }

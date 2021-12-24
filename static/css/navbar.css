@@ -1,0 +1,216 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700;900');
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;	
+}
+
+/*
+	Code source:
+	Responsive Navbar Using CSS Grid/Flexbox
+	Reggie Bowers
+	https://codepen.io/bowersrd/pen/dwXLba
+*/
+
+/* BASIC SETUP */
+.page-wrapper {
+	width: 100%;
+	height: auto;
+}
+
+.nav-wrapper {
+	position: -webkit-sticky; /* Safari */
+	position: sticky;
+	top: 0;
+    width: 100%;
+    z-index: 5;	
+}
+
+/* NAVIGATION */
+.navbar {
+	display: grid;
+	grid-template-columns: 1fr 3fr;
+	align-items: center;
+	height: 100px;
+	overflow: hidden;
+}
+
+.navbar .logo {
+	justify-self: start;
+	height: 60px;
+	width: auto;
+	margin-left: 20px;
+	-webkit-filter: drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black);
+			filter: drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black);
+}
+
+.navbar ul {
+	display: grid;
+	grid-template-columns: repeat(4,1fr);
+	justify-self: end;
+	list-style: none;
+}
+
+.nav-item a {
+	color: #FFD221;    
+	font-family: 'Nunito', sans-serif;
+	font-size: 1.6rem;
+	letter-spacing: -0.1rem;
+	text-decoration: none;
+	text-shadow: 0 0 0.1rem black,
+		0 0 0.1rem black,
+		0 0 0.1rem black,
+		0 0 0.1rem black,
+		0 0 0.2rem black;
+	transition: color 0.3s ease-out;
+}
+
+.nav-item a:hover {
+	color: hsl(108, 86%, 40%);
+}
+
+/* SEARCH FUNCTION */  
+#search-icon {
+	margin-top: 3px;
+	margin-left: 15px;
+	color: #FFD221; 
+	font-size: 0.9rem;	
+	text-shadow: 0 0 0.1rem black,
+		0 0 0.1rem black,
+		0 0 0.1rem black,
+		0 0 0.1rem black,
+		0 0 0.2rem black;
+	transition: color 0.3s ease-out;
+}
+  
+#search-icon:hover {
+	color: hsl(108, 86%, 40%);
+	cursor: pointer;
+}
+  
+.search {
+	transform: translate(-35%);
+	-webkit-transform: translate(-35%);
+	transition: transform 0.7s ease-in-out;
+	color: #FFD221;
+}
+  
+.no-search {
+	transform: translate(0);
+	transition: transform 0.7s ease-in-out;
+}
+  
+.search-input {
+	position: absolute;	
+	right: -100px;
+	opacity: 0;
+	z-index: -1;
+	transition: opacity 0.6s ease;
+}
+  
+.search-active {
+	opacity: 1;
+	z-index: 0;
+}
+  
+input {
+	border: 0;
+	border-left: 1px solid #ccc;
+	border-radius: 1rem;
+	outline: 0;
+	padding: 5px;
+}
+
+/* MOBILE MENU */
+.menu-toggle .helmet{
+	height: 60px;	
+	margin: 5px auto;
+	-webkit-filter: drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black);
+			filter: drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black);	
+}
+
+.menu-toggle {
+	display: none;
+	justify-self: end;
+	margin-right: 25px;
+}
+
+.menu-toggle:hover{
+	cursor: pointer;
+}
+
+/* Media Queries */
+/* Mobile Devices - Phones/Tablets */
+@media only screen and (max-width: 745px) { 
+	.nav-item a {
+		font-size: 1.5rem;
+	}
+	.search-input {
+		right: -113px;		
+	}
+}
+
+@media only screen and (max-width: 720px) { 
+		
+	/* MOBILE NAVIGATION */
+	
+	.navbar ul {
+		display: flex;
+		flex-direction: column;
+		position: fixed;
+		justify-content: start;
+		top: 100px;		
+		width: 100%;
+		height: calc(100vh - 55px);
+		transform: translate(-101%);
+		text-align: center;
+		overflow: hidden;
+	}
+
+	.navbar li {
+	  	padding: 15px;
+	}	
+	
+	.navbar li a {
+	  	font-size: 2rem;
+	}
+	 
+	.menu-toggle, .helmet {
+		display: block;
+		cursor: pointer;
+	}
+	
+	.mobile-nav {
+		transform: translate(0%)!important;
+  	}
+	
+	/* SEARCH DISABLED ON MOBILE */
+	
+	.search-input {
+		position: static;
+		margin: 0 auto;
+		z-index: 6;
+		width: 80%;
+    	text-align: center;
+	}
+
+	#search-icon {
+		margin-top: 3px;
+		margin-left: 0;
+		margin-bottom: 10px;		
+	}
+	
+	
+}
