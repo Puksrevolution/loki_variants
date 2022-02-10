@@ -2,91 +2,183 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-    <!-- SEO -->
-    <meta name="description" content="">
-    <meta name="keywords" content="">
-    <meta name="author" content="Puks's WebDesing">
+  <!-- SEO -->
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <meta name="author" content="Puks's WebDesing">
 
-    <!-- Social Media -->
-    <meta property="og:title" content="">
-    <meta property="og:description" content=".">
-    <meta property="og:image" content="">
-    <meta property="og:url" content="">
+  <!-- Social Media -->
+  <meta property="og:title" content="">
+  <meta property="og:description" content=".">
+  <meta property="og:image" content="">
+  <meta property="og:url" content="">
 
-    <title>Loki Variants | Marvels Multiverse</title>
+  <title>Loki Variants | Marvels Multiverse</title>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="media/icons/favicon.png" />
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="media/icons/favicon.png" />
 
-    <!----------------------------------------------- CORE CSS ----------------------------------------------->
-    <!-- Font Awesome -->
-    <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
-        integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
+  <!----------------------------------------------- CORE CSS ----------------------------------------------->
+  <!-- Font Awesome -->
+  <link rel="stylesheet" type="text/css" href="https://use.fontawesome.com/releases/v5.6.1/css/all.css"
+    integrity="sha384-gfdkjb5BdAXd+lj+gudLWI+BXq4IuLW5IT+brZEZsLFm++aCMlF1V92rMkPaX4PP" crossorigin="anonymous">
 
-    <!-- Intro CSS -->
-    <link rel="stylesheet" href="static/css/intro.css">
+  <!-- Intro CSS -->
+  <link rel="stylesheet" href="static/css/intro.css">
 
-    <!----------------------------------------------- EXTRA CSS ---------------------------------------------->
-    <!-- Navbar -->
-    <link rel="stylesheet" href="static/css/navbar.css">
+  <!----------------------------------------------- EXTRA CSS ---------------------------------------------->
+  <!-- Footer -->
+  <link rel="stylesheet" href="static/css/footer.css">
 </head>
 
 <body>
-    <!-- Code source: Marvel Logo animation | pure CSS, jessica duarte,	https://codepen.io/jessynd/pen/aObLYJ -->
-    <input class="retrigger" type="radio" name="rerun" id="retrigger--1" />
-    <input class="retrigger" type="radio" name="rerun" id="retrigger--2" checked="checked" />
-    <div class="bg"></div>
-    <div class="pane">
-        <div class="rotate">
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-            <div class="intro">LOKI<br>VARIANTS</div>
-        </div>
+
+  <!-- NAVBAR -->
+  <!-- Code source: CodePen, Responsive Navbar Using CSS Grid/Flexbox, Reggie Bowers, https://codepen.io/bowersrd/pen/dwXLba -->
+  <div class="nav-wrapper">
+    <nav class="navbar">
+      <a href="index.html">
+        <img class="logo" src="media/logo/loki-logo.png" alt="Loki">
+      </a>
+      <div class="menu-toggle" id="mobile-menu">
+        <img class="helmet" src="media/icons/helmet.png" width="60" alt="Loki Helmet">
+      </div>
+      <ul class="nav no-search">
+        <li class="nav-item"><a href="history.html">History</a></li>
+        <li class="nav-item"><a href="gallery.html">Gallery</a></li>
+        <li class="nav-item"><a href="#">Contact Us</a></li>
+        <i class="fas fa-search" id="search-icon"></i>
+        <input class="search-input" type="text" placeholder="Search..">
+      </ul>
+    </nav>
+  </div>
+  
+  <!-- INTRO SECTION -->
+  <!-- Code source: CodePen, Marvel Logo animation | pure CSS, jessica duarte,	https://codepen.io/jessynd/pen/aObLYJ -->
+  <input class="retrigger" type="radio" name="rerun" id="retrigger--1" />
+  <input class="retrigger" type="radio" name="rerun" id="retrigger--2" checked="checked" />
+  <div class="bg"></div>
+  <div class="pane">
+    <div class="rotate">
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+      <div class="intro">LOKI<br>VARIANTS</div>
+    </div>
+  </div>
+
+  <!-- BUFFER SECTION -->
+  <div class="buffer"></div>
+
+  <!-- FOOTER -->
+  <!-- Code source: CodePen, Responsive footer with pure CSS, OM-10,	https://codepen.io/om-10/pen/abvvBxR -->
+  <footer class="footer mt-2">
+    <div class="inner-footer">
+
+      <!--  for company name and description -->
+      <div class="footer-logo">
+        <a href="index.html">
+          <img class="logo" src="media/logo/loki-logo.png" alt="Loki">
+        </a>
+        <p></p>
+      </div>
+
+      <!--  Artists links  -->
+      <div class="footer-items">
+        <h3>Artists</h3>
+        
+        <ul class="footer__ul">
+          <a href="#">
+            <li>Artwork</li>
+          </a>
+          <a href="#">
+            <li>Fan Art</li>
+          </a>          
+        </ul>
+      </div>
+
+      <!--  Credit links -->
+      <div class="footer-items">
+        <h3>Credits</h3>
+        
+        <ul class="footer__ul">
+          <a href="#">
+            <li>Images</li>
+          </a>
+          <a href="#">
+            <li>Content</li>
+          </a>
+          <a href="#">
+            <li>Videos</li>
+          </a>
+          <a href="#">
+            <li>Code</li>
+          </a>
+        </ul>
+      </div>
+
+      <!--  XXX  -->
+      <div class="footer-items">
+        <h3>XXX</h3>
+        
+        <ul class="footer__ul">
+          <a href="#">
+            <li>XXX</li>
+          </a>
+          <a href="#">
+            <li>XXX</li>
+          </a>          
+        </ul>
+      </div>
+
+      <!--   for social links -->
+      <div class="social-media">
+        <a href="www.instagram.com" target="_blank" rel="noopener">
+          <i class="fab fa-instagram" aria-hidden="true"></i>
+          <span class="sr-only">Instagram</span>
+        </a>
+        <a href="www.facebook.com" target="_blank" rel="noopener">
+          <i class="fab fa-facebook" aria-hidden="true"></i>
+          <span class="sr-only">Facebook</span>
+        </a>
+        <a href="www.youtube.com" target="_blank" rel="noopener">
+          <i class="fab fa-youtube" aria-hidden="true"></i>
+          <span class="sr-only">YouTube</span>
+        </a>
+      </div>
     </div>
 
-    <!-- Code source: Responsive Navbar Using CSS Grid/Flexbox, Reggie Bowers, https://codepen.io/bowersrd/pen/dwXLba -->            
-    <div class="nav-wrapper">
-        <nav class="navbar">
-            <a href="index.html">
-                <img class="logo" src="media/logo/loki-logo.png" alt="Loki">
-            </a>
-            <div class="menu-toggle" id="mobile-menu">
-                <img class="helmet" src="media/icons/helmet.png" width="60" alt="Loki Helmet">
-            </div>
-            <ul class="nav no-search">                
-                <li class="nav-item"><a href="history.html">History</a></li>
-                <li class="nav-item"><a href="gallery.html">Gallery</a></li>                
-                <li class="nav-item"><a href="#">Contact Us</a></li>
-                <i class="fas fa-search" id="search-icon"></i>
-                <input class="search-input" type="text" placeholder="Search..">
-            </ul>
-        </nav>        
-    </div>        
-    
+    <!--   Footer Bottom start  -->
+    <div class="footer-bottom">
+      &copy; Puk's WebDesing
+    </div>
+  </footer>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="static/js/navbar.js"></script>
+  <!----------------------------------------------- SCRIPTS ---------------------------------------------->
+  <!-- jQuery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js" crossorigin="anonymous"></script>
+  <!-- Navbar -->
+  <script type="text/javascript" src="static/js/navbar.js"></script>
 </body>
 
 </html>

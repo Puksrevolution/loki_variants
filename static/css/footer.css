@@ -1,0 +1,134 @@
+
+/*
+	Code source:
+	Responsive footer with pure CSS
+	OM-10
+	https://codepen.io/om-10/pen/abvvBxR
+*/
+
+/* FOOTER */
+.footer {
+	font-family: 'Nunito', sans-serif;
+	width: 100%;	
+	display: block;	
+	bottom: 0;	
+}
+
+.inner-footer {	
+	width: 95%;
+	margin: auto;	
+	display: flex;
+	flex-wrap: wrap;
+	box-sizing: border-box;
+	justify-content: space-around;
+}
+
+.footer-logo {
+	width: 30%;	
+	box-sizing: border-box;	
+}
+
+.footer-logo .logo {
+	justify-self: start;
+	height: 60px;
+	width: auto;
+	-webkit-filter: drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black);
+			filter: drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black)
+					drop-shadow(0 0 0.1rem black);
+}
+
+.footer-logo > p {
+	margin-top: 0.6rem;
+}
+
+.footer-items {
+	width: 20%;	
+	box-sizing: border-box;	
+}
+
+.footer-items > h3 {
+	padding-bottom: 0.5rem;
+	font-family: 'Mirza', cursive;
+	font-size: 1.5rem;
+}
+
+.footer__ul {
+	list-style: none;
+}
+
+.footer__ul a {
+	text-decoration: none;
+	outline: none;
+	transition: 0.3s;
+	color: #FFD221;
+	text-shadow: 0 0 0.1rem black,
+		0 0 0.1rem black,
+		0 0 0.1rem black,
+		0 0 0.1rem black,
+		0 0 0.2rem black;
+}
+
+.footer__ul a:hover {
+	color: hsl(108, 86%, 40%);
+}
+
+.footer__ul li {
+	
+	height: 25px;
+}
+
+.footer__ul i {
+	margin-right: 20px;
+}
+
+.social-media {
+	width: 100%;	
+	text-align: center;
+	font-size: 20px;
+}
+
+.social-media a {
+	text-decoration: none;
+}
+
+.social-media i {
+	height: 25px;
+	width: 25px;
+	margin: 20px 10px;
+	padding: 4px;	
+	transition: 0.5s;color: #FFD221;
+	text-shadow: 0 0 0.1rem black,
+		0 0 0.1rem black,
+		0 0 0.1rem black,
+		0 0 0.1rem black,
+		0 0 0.2rem black;
+}
+
+.social-media i:hover {
+	transform: scale(1.5);
+}
+
+.footer-bottom {
+	padding: 10px;		
+	font-size: 12px;
+	text-align: center;
+}
+
+/* for tablet mode view */
+@media screen and (max-width: 660px) {
+	.footer-items {
+		width: 100%;
+	}
+}
+/* for mobile screen view */
+@media only screen and (max-width: 540px) { 
+	.footer {
+		position: absolute;
+		top: 400px;		
+	}
+}

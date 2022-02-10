@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?&family=Nunito:wght@200;300;400;600;700;900&family=Mirza:wght@700');
 
+/* -------------- BASIC PAGE SETUP */
 body {
     background-image: url('../images/history/Thor_Ragnarok_Textless_Character_Posters_03.jpg');
     background-repeat: no-repeat;
@@ -11,10 +12,13 @@ body {
     font-family: 'Nunito', sans-serif;
 }
 
+/* -------------- NAVIGATION */
 .nav-wrapper {	
     background: linear-gradient(0deg, rgba(0,0,0,0) 0%, rgba(0,0,0,0.4) 20%, rgba(0,0,0,0.7) 60%, rgba(0,0,0,0.9) 100%);
+    z-index: 5;
 }
 
+/* --------------  */
 .main {
     margin: 2rem 3rem 3rem;
 }
@@ -110,6 +114,7 @@ body {
     max-width: 250px;
 }
 
+/* -------------- UTILITY CLASSES */
 .mb-2 {
     margin-bottom: 2rem;
 }
@@ -126,6 +131,9 @@ body {
     padding: 0 4rem;
 }
 
+
+/* -------------- MEDIA QUERIES */
+/* Mobile Devices - Phones/Tablets */
 @media only screen and (max-width: 720px) { 
 	
     .nav-wrapper {	
@@ -144,6 +152,10 @@ body {
 }
 
 @media only screen and (max-width: 400px) {
+    body {
+        background-color: black;
+    }
+
     .m-xs-2 {
         margin: 2rem;
     }
